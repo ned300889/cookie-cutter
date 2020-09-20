@@ -1,0 +1,7 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: "Include cookie-cutter"
+      include_role:
+        name: "cookie-cutter"
