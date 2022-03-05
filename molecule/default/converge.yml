@@ -1,7 +1,8 @@
 ---
 - name: Converge
   hosts: all
+  become: true
   tasks:
-    - name: "Include cookie-cutter"
+    - name: "Include replace"
       include_role:
-        name: "cookie-cutter"
+        name: "ned300889.replace"
